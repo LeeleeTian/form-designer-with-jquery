@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../node_modules/lodash/lodash.min.js"></script>
     <script src="js/main.js"></script>
-
+  
     <title>Form Designer</title>
 </head>
 
 <body>
+<div id="dialog-form" title="添加字段">
+    <form>
+    <fieldset>
+        <p class='validateTips'>请从下面字段类型中选择一种：</p>
+        <label>
+        <input type="radio" name="stringType" id="text">文本
+        </label>
+        <label>
+        <input type="radio" name="stringType" id="date">日期
+        </label>
+    </fieldset>
+    </form>
+</div>
+
+<button id="add">添加</button>
+<button id="preview">预览</button>
+
 <div>
     <div id="container"></div>
 </div>
